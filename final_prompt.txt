@@ -1,0 +1,139 @@
+Prompt
+You are a senior full-stack developer specializing in React, TypeScript, and modern web development.
+Your task is to build a complete, production-ready CanvasJS knowledge library website from scratch, based strictly on the specifications provided in input_ui_spec.txt.
+This UI Case evaluation focuses on:
+- App creation from scratch
+- UI completeness and information architecture
+- Code quality and front-end architecture
+- TypeScript correctness
+- Responsiveness and accessibility
+- Animation and interactive experience
+────────────────────────────────────Technical Requirements────────────────────────────────────
+- Framework: React 18+ with TypeScript
+- Build Tool: Vite
+- Styling: Tailwind CSS
+- Package Manager: pnpm
+- Chart Library: CanvasJS (via canvasjs-react-charts or equivalent)
+- Routing: React Router
+- Animation:
+- CSS animations and/or JS animation libraries (e.g. Framer Motion)
+- Homepage MUST contain visible animated elements
+────────────────────────────────────Your Responsibilities────────────────────────────────────
+1. Read and Analyze Specification
+- Read input_ui_spec.txt thoroughly before writing any code
+- Identify:
+- All required pages
+- Documentation sections
+- Example/tutorial content
+- Animation requirements
+- Understand learning flow for developers
+- ❌ Do NOT assume features not explicitly mentioned
+--------------------------------------------------------------------------------
+2. Generate Complete Project Structure
+You MUST generate a fully working React + TypeScript + Tailwind project, including:
+- package.json
+- tsconfig.json(strict TypeScript configuration)
+- tailwind.config.js
+- postcss.config.js
+- vite.config.ts
+- index.html
+Required folder structure:
+src/
+  components/      # Reusable UI components
+  pages/           # Page-level components
+  charts/          # CanvasJS chart wrappers
+  hooks/           # Custom hooks
+  types/           # TypeScript types
+  utils/           # Utility functions
+  data/            # Mock tutorial / example data
+  App.tsx          # Root component
+  main.tsx         # Application entry
+
+--------------------------------------------------------------------------------
+3. Implement All Required Features
+Based strictly on input_ui_spec.txt, you MUST implement:
+- All documentation pages
+- All example/tutorial pages
+- Live CanvasJS chart examples
+- Navigation between docs, tutorials, and examples
+- Homepage animation effects
+- Responsive layout (mobile / tablet / desktop)
+- Proper state management
+- Fully typed data models
+- Mock data where APIs are not defined
+--------------------------------------------------------------------------------
+4. Code Quality Standards
+- TypeScript
+- Strict mode enabled
+- ❌ No any unless absolutely unavoidable (must be justified)
+- Components
+- Functional components only
+- Hooks-based logic
+- Styling
+- Tailwind utility classes
+- Responsive breakpoints
+- Accessibility
+- Semantic HTML
+- ARIA labels where needed
+- Performance
+- Lazy loading pages where appropriate
+- Clean Code
+- DRY principles
+- Clear naming
+- Minimal comments (only for complex logic)
+--------------------------------------------------------------------------------
+5. Generate README.md
+You MUST generate a README.md containing:
+- Project overview
+- CanvasJS learning library purpose
+- Tech stack
+- Installation instructions (pnpm install)
+- Development server usage (pnpm dev)
+- Production build (pnpm build)
+- Project structure explanation
+- List of implemented documentation & examples
+- How to explore charts and tutorials
+- Known limitations (if any)
+--------------------------------------------------------------------------------
+6. Generate Evaluation Report
+You MUST generate evaluation_report.json using the structure below:
+{
+  "metadata": {
+    "test_date": "ISO timestamp",
+    "spec_file": "input_ui_spec.txt",
+    "agent_model": "model_name"
+  },
+  "scores": {
+    "completeness": 0,
+    "code_quality": 0,
+    "typescript_usage": 0,
+    "tailwind_usage": 0,
+    "responsiveness": 0,
+    "accessibility": 0,
+    "animation_quality": 0,
+    "overall_score": 0
+  },
+  "features_implemented": [],
+  "features_missing": [],
+  "files_generated": [],
+  "validation_status": "PASS/FAIL",
+  "notes": ""
+}
+
+────────────────────────────────────Strict Rules for the Agent────────────────────────────────────
+MUST DO
+- Read entire input_ui_spec.txt before starting
+- Generate ALL required files for a working project
+- Use TypeScript strictly
+- Implement ALL features from specification
+- Ensure pnpm install && pnpm dev works
+- Include homepage animation
+- Render real CanvasJS charts
+- Generate README.md and evaluation_report.json
+MUST NOT
+- Skip any feature mentioned in spec
+- Hallucinate CanvasJS APIs
+- Use JavaScript instead of TypeScript
+- Ignore animation requirement
+- Omit configuration files
+- Output partial or incomplete projects
