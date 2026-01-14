@@ -1,0 +1,260 @@
+Claude-Opus-4.5  ：：
+User: Prompt
+You are a senior full-stack developer specializing in React, TypeScript, and modern web development.
+Your task is to build a complete, production-ready CanvasJS knowledge library website from scratch, based strictly on the specifications provided in input_ui_spec.txt.
+This UI Case evaluation focuses on:
+- App creation from scratch
+- UI completeness and information architecture
+- Code quality and front-end architecture
+- TypeScript correctness
+- Responsiveness and accessibility
+- Animation and interactive experience
+────────────────────────────────────Technical Requirements────────────────────────────────────
+- Framework: React 18+ with TypeScript
+- Build Tool: Vite
+- Styling: Tailwind CSS
+- Package Manager: pnpm
+- Chart Library: CanvasJS (via canvasjs-react-charts or equivalent)
+- Routing: React Router
+- Animation:
+- CSS animations and/or JS animation libraries (e.g. Framer Motion)
+- Homepage MUST contain visible animated elements
+────────────────────────────────────Your Responsibilities────────────────────────────────────
+1. Read and Analyze Specification
+- Read input_ui_spec.txt thoroughly before writing any code
+- Identify:
+- All required pages
+- Documentation sections
+- Example/tutorial content
+- Animation requirements
+- Understand learning flow for developers
+- ❌ Do NOT assume features not explicitly mentioned
+--------------------------------------------------------------------------------
+2. Generate Complete Project Structure
+You MUST generate a fully working React + TypeScript + Tailwind project, including:
+- package.json
+- tsconfig.json(strict TypeScript configuration)
+- tailwind.config.js
+- postcss.config.js
+- vite.config.ts
+- index.html
+Required folder structure:
+src/
+  components/      # Reusable UI components
+  pages/           # Page-level components
+  charts/          # CanvasJS chart wrappers
+  hooks/           # Custom hooks
+  types/           # TypeScript types
+  utils/           # Utility functions
+  data/            # Mock tutorial / example data
+  App.tsx          # Root component
+  main.tsx         # Application entry
+
+--------------------------------------------------------------------------------
+3. Implement All Required Features
+Based strictly on input_ui_spec.txt, you MUST implement:
+- All documentation pages
+- All example/tutorial pages
+- Live CanvasJS chart examples
+- Navigation between docs, tutorials, and examples
+- Homepage animation effects
+- Responsive layout (mobile / tablet / desktop)
+- Proper state management
+- Fully typed data models
+- Mock data where APIs are not defined
+--------------------------------------------------------------------------------
+4. Code Quality Standards
+- TypeScript
+- Strict mode enabled
+- ❌ No any unless absolutely unavoidable (must be justified)
+- Components
+- Functional components only
+- Hooks-based logic
+- Styling
+- Tailwind utility classes
+- Responsive breakpoints
+- Accessibility
+- Semantic HTML
+- ARIA labels where needed
+- Performance
+- Lazy loading pages where appropriate
+- Clean Code
+- DRY principles
+- Clear naming
+- Minimal comments (only for complex logic)
+--------------------------------------------------------------------------------
+5. Generate README.md
+You MUST generate a README.md containing:
+- Project overview
+- CanvasJS learning library purpose
+- Tech stack
+- Installation instructions (pnpm install)
+- Development server usage (pnpm dev)
+- Production build (pnpm build)
+- Project structure explanation
+- List of implemented documentation & examples
+- How to explore charts and tutorials
+- Known limitations (if any)
+--------------------------------------------------------------------------------
+6. Generate Evaluation Report
+You MUST generate evaluation_report.json using the structure below:
+{
+  "metadata": {
+    "test_date": "ISO timestamp",
+    "spec_file": "input_ui_spec.txt",
+    "agent_model": "model_name"
+  },
+  "scores": {
+    "completeness": 0,
+    "code_quality": 0,
+    "typescript_usage": 0,
+    "tailwind_usage": 0,
+    "responsiveness": 0,
+    "accessibility": 0,
+    "animation_quality": 0,
+    "overall_score": 0
+  },
+  "features_implemented": [],
+  "features_missing": [],
+  "files_generated": [],
+  "validation_status": "PASS/FAIL",
+  "notes": ""
+}
+
+────────────────────────────────────Strict Rules for the Agent────────────────────────────────────
+MUST DO
+- Read entire input_ui_spec.txt before starting
+- Generate ALL required files for a working project
+- Use TypeScript strictly
+- Implement ALL features from specification
+- Ensure pnpm install && pnpm dev works
+- Include homepage animation
+- Render real CanvasJS charts
+- Generate README.md and evaluation_report.json
+MUST NOT
+- Skip any feature mentioned in spec
+- Hallucinate CanvasJS APIs
+- Use JavaScript instead of TypeScript
+- Ignore animation requirement
+- Omit configuration files
+- Output partial or incomplete projects
+
+GitHub Copilot: Optimizing tool selection...
+
+Read [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/input_ui_spec.txt)
+
+Now I have a complete understanding of the specifications. Let me create the full project structure with all required files. I'll start by creating all the configuration files and then the source code. 
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/package.json)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/tsconfig.json)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/tsconfig.node.json)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/vite.config.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/tailwind.config.js)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/postcss.config.js)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/index.html)
+
+Now let me create the TypeScript types and data files: 
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/types/index.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/data/examples.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/data/tutorials.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/data/documentation.ts)
+
+Now let's create the utility functions, hooks, and chart wrapper components: 
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/utils/helpers.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/hooks/useWindowSize.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/hooks/useCopyToClipboard.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/hooks/index.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/charts/ChartWrapper.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/charts/LineChart.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/charts/BarChart.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/charts/PieChart.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/charts/index.ts)
+
+Now let's create the reusable UI components: 
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/components/Navbar.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/components/Footer.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/components/Card.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/components/Button.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/components/CodeBlock.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/components/Layout.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/components/Badge.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/components/index.ts)
+
+Now let's create all the page components: 
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/pages/HomePage.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/pages/DocumentationPage.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/pages/ExamplesPage.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/pages/TutorialsPage.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/pages/NotFoundPage.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/pages/index.ts)
+
+Now let's create the main App.tsx, main.tsx, and CSS files: 
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/App.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/main.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/index.css)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/src/vite-env.d.ts)
+
+Now let's create the README.md and evaluation_report.json: 
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/README.md)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/evaluation_report.json)
+
+Let me also add a public folder with a favicon: 
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.13/case2/Claude-Opus-4.5/canvasjs-learning-hub/public/vite.svg)
+
+Now let me verify the project by installing dependencies and running the dev server: 
+
+Ran terminal command: cd "c:\Users\v-danlingyin\Documents\microsoft_projects_files\bugBash\26.1\1.13\case2\Claude-Opus-4.5\canvasjs-learning-hub"; pnpm install
+
+Dependencies installed successfully. Let me now run the development server to ensure everything works: 
+
+Ran terminal command: pnpm dev
+
+The terminal changed directory. Let me try again with the full path: 
+
+Ran terminal command: Set-Location "c:\Users\v-danlingyin\Documents\microsoft_projects_files\bugBash\26.1\1.13\case2\Claude-Opus-4.5\canvasjs-learning-hub"; pnpm dev
+
+The development server is running successfully at `http://localhost:3000/`. Let me open it in the browser: 
+
+Opened Simple Browser at http://localhost:3000/
+
+Made changes.
