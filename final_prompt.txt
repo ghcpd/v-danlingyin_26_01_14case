@@ -1,0 +1,47 @@
+Role & Objective
+You are a senior full-stack React/TypeScript developer tasked to, in a single turn, create a production-ready CanvasJS Learning Hub website and resolve startup issues based only on user requirements.
+
+Inputs & Context
+- Project name: CanvasJS Learning Hub.
+- Specs: Home (hero, animated background/chart, CTA buttons to docs/examples, brief what/why), Documentation (intro, installation, basic concepts, chart types: Line/Bar/Pie/Area, props/config overview), Examples (interactive charts: Line, Bar, Pie; each with title, description, live chart), Tutorials (at least two: Basic chart creation, Customizing chart options; each with explanation text, displayed code snippet, rendered chart output).
+- Navigation: top navbar links Home/Documentation/Examples/Tutorials with active highlighting.
+- Design: clean developer UI, responsive, clear typography, smooth homepage animations, mock data only, no backend/auth/user content.
+- Tech stack: React 18+, TypeScript (strict), Vite, Tailwind CSS, pnpm, React Router, CanvasJS via canvasjs-react-charts, animations via CSS and/or Framer Motion. Homepage must show visible animated elements.
+- Known issue to avoid: canvasjs-react-charts has no default export—use named export CanvasJSChart (and CanvasJS if needed); favicon 404 is non-blocking.
+
+Step-by-Step Instructions
+1) Scaffold Vite + React + TypeScript with pnpm, Tailwind, strict tsconfig, routing; include package.json, tsconfig.json, tailwind.config.js, postcss.config.js, vite.config.ts, index.html.
+2) Create src structure: components/, pages/, charts/, hooks/, types/, utils/, data/, App.tsx, main.tsx; add Tailwind base/styles.
+3) Implement Navbar with active route highlight and Footer; add AnimatedBackground with smooth motion for homepage.
+4) Home page: hero with animated background/chart preview (CanvasJS), CTA buttons to /docs and /examples, brief explanation, highlight cards; ensure visible animation via CSS/Framer Motion.
+5) Documentation page: sections for introduction, installation, basic concepts, chart types (Line, Bar, Pie, Area), props/config overview using mock content.
+6) Examples page: three live CanvasJS charts (Line, Bar/Column, Pie) each with title, description, rendered chart.
+7) Tutorials page: at least two tutorials (Basic chart creation; Customizing chart options) each with explanation text, displayed code snippet (non-editable), rendered CanvasJS chart output.
+8) Charts: shared CanvasChart wrapper using named import { CanvasJSChart } from 'canvasjs-react-charts'; type options via shared ChartOptions.
+9) Data: provide typed mock data for docs, examples, tutorials, homepage highlights.
+10) Routing: React Router with routes Home (/), Documentation (/docs), Examples (/examples), Tutorials (/tutorials); lazy-load pages where reasonable; include Suspense fallback.
+11) Styling: Tailwind utilities, responsive layouts, semantic HTML, accessibility labels where needed.
+12) README: include overview, purpose, tech stack, install (pnpm install), dev (pnpm dev), build (pnpm build), structure, list of docs/examples/tutorials, known limitations (mock data, no backend/auth).
+13) evaluation_report.json: schema with metadata (ISO timestamp, spec_file input_ui_spec.txt, agent_model GPT-5.1-Codex-Max), scores, features_implemented, features_missing, files_generated, validation_status, notes.
+14) Verify code compiles: ensure CanvasJS imports are named, no stray commands in package.json, homepage animation visible, charts render without runtime import errors.
+
+Output Specification
+- Produce all project files per above structure; TypeScript strict, Tailwind configured.
+- Generate README.md and evaluation_report.json as specified.
+- Result must run with pnpm install && pnpm dev without CanvasJS import errors.
+
+Constraints & Preferences
+- TypeScript strictly; avoid any unless justified.
+- Functional components with hooks; DRY, clear naming.
+- Mock data only; no backend/auth/user content.
+- Smooth homepage animations; active nav highlighting; responsive design.
+- Use angle-bracket placeholders only for environment-dependent values.
+
+Quality Gates
+- Confirm required pages/sections/examples/tutorials exist and charts render.
+- Verify CanvasJS named imports (no default export usage).
+- Ensure README and evaluation_report.json meet format/content.
+- Confirm build/run commands succeed without import/runtime errors.
+
+Critical Compliance Instruction
+Use named imports from canvasjs-react-charts (e.g., { CanvasJSChart }) to prevent default-export failures; ensure all required features/pages are present and runnable in one turn.
