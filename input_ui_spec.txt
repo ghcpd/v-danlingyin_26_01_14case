@@ -1,0 +1,74 @@
+Project Name:
+CanvasJS Learning Hub
+
+Project Description:
+A developer-focused knowledge library website for learning CanvasJS, including:
+- Official-style documentation
+- Interactive chart examples
+- Step-by-step tutorials
+- A visually engaging animated homepage
+
+Required Pages:
+
+1. Home Page
+- Hero section introducing CanvasJS
+- Animated background or animated chart elements
+- Call-to-action buttons:
+  - "View Documentation"
+  - "Explore Examples"
+- Brief explanation of what CanvasJS is and why to use it
+
+2. Documentation Page
+- Introduction to CanvasJS
+- Installation instructions
+- Basic chart concepts
+- Explanation of common chart types:
+  - Line
+  - Bar
+  - Pie
+  - Area
+- Props and configuration overview
+
+3. Examples Page
+- List of interactive CanvasJS examples
+- Each example includes:
+  - Chart title
+  - Description
+  - Live rendered chart
+- Examples required:
+  - Line chart
+  - Bar chart
+  - Pie chart
+
+4. Tutorials Page
+- Step-by-step learning tutorials
+- Each tutorial includes:
+  - Explanation text
+  - Code snippet (displayed, not editable)
+  - Rendered chart output
+- At least 2 tutorials required:
+  - Basic chart creation
+  - Customizing chart options
+
+Navigation:
+- Top navigation bar linking to:
+  - Home
+  - Documentation
+  - Examples
+  - Tutorials
+
+Design & UX Requirements:
+- Clean, developer-oriented UI
+- Responsive layout
+- Clear typography
+- Smooth animations on homepage
+- Highlight active navigation item
+
+Data:
+- No backend APIs
+- Use mock data for charts and tutorials
+
+Non-Goals:
+- No authentication
+- No backend services
+- No user-generated content
